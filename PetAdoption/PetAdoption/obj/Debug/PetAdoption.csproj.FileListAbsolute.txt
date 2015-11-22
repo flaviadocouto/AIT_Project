@@ -66,3 +66,4 @@ C:\Users\flavi\Documents\GitHub\AIT_Project\PetAdoption\PetAdoption\bin\Microsof
 C:\Users\flavi\Documents\GitHub\AIT_Project\PetAdoption\PetAdoption\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\flavi\Documents\GitHub\AIT_Project\PetAdoption\PetAdoption\obj\Debug\PetAdoption.dll
 C:\Users\flavi\Documents\GitHub\AIT_Project\PetAdoption\PetAdoption\obj\Debug\PetAdoption.pdb
+C:\Users\flavi\Documents\GitHub\AIT_Project\PetAdoption\PetAdoption\obj\Debug\PetAdoption.csprojResolveAssemblyReference.cache
