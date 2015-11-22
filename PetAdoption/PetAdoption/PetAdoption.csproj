@@ -168,8 +168,12 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdoptionsController.cs" />
+    <Compile Include="Controllers\AnimalsController.cs" />
+    <Compile Include="Controllers\BreedsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\SheltersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -239,6 +243,26 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Shelters\Create.cshtml" />
+    <Content Include="Views\Shelters\Delete.cshtml" />
+    <Content Include="Views\Shelters\Details.cshtml" />
+    <Content Include="Views\Shelters\Edit.cshtml" />
+    <Content Include="Views\Shelters\Index.cshtml" />
+    <Content Include="Views\Adoptions\Create.cshtml" />
+    <Content Include="Views\Adoptions\Delete.cshtml" />
+    <Content Include="Views\Adoptions\Details.cshtml" />
+    <Content Include="Views\Adoptions\Edit.cshtml" />
+    <Content Include="Views\Adoptions\Index.cshtml" />
+    <Content Include="Views\Breeds\Create.cshtml" />
+    <Content Include="Views\Breeds\Delete.cshtml" />
+    <Content Include="Views\Breeds\Details.cshtml" />
+    <Content Include="Views\Breeds\Edit.cshtml" />
+    <Content Include="Views\Breeds\Index.cshtml" />
+    <Content Include="Views\Animals\Create.cshtml" />
+    <Content Include="Views\Animals\Delete.cshtml" />
+    <Content Include="Views\Animals\Details.cshtml" />
+    <Content Include="Views\Animals\Edit.cshtml" />
+    <Content Include="Views\Animals\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
