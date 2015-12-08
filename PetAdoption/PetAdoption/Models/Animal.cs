@@ -21,6 +21,7 @@ namespace PetAdoption.Models
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
         public DateTime DOB { get; set; }
         public string Gender { get; set; }
+        public Boolean isAdopted { get; set; }
 
         public virtual ICollection<Adoption> Adoption
         {
