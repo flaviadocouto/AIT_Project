@@ -185,6 +185,10 @@
     <Compile Include="Migrations\201512090140586_InitialCreate1.Designer.cs">
       <DependentUpon>201512090140586_InitialCreate1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201512091701234_ChangeAdoptionModel.cs" />
+    <Compile Include="Migrations\201512091701234_ChangeAdoptionModel.Designer.cs">
+      <DependentUpon>201512091701234_ChangeAdoptionModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Adoption.cs" />
@@ -258,11 +262,6 @@
     <Content Include="Views\Shelters\Details.cshtml" />
     <Content Include="Views\Shelters\Edit.cshtml" />
     <Content Include="Views\Shelters\Index.cshtml" />
-    <Content Include="Views\Adoptions\Create.cshtml" />
-    <Content Include="Views\Adoptions\Delete.cshtml" />
-    <Content Include="Views\Adoptions\Details.cshtml" />
-    <Content Include="Views\Adoptions\Edit.cshtml" />
-    <Content Include="Views\Adoptions\Index.cshtml" />
     <Content Include="Views\Breeds\Create.cshtml" />
     <Content Include="Views\Breeds\Delete.cshtml" />
     <Content Include="Views\Breeds\Details.cshtml" />
@@ -273,6 +272,11 @@
     <Content Include="Views\Animals\Details.cshtml" />
     <Content Include="Views\Animals\Edit.cshtml" />
     <Content Include="Views\Animals\Index.cshtml" />
+    <Content Include="Views\Adoptions\Create.cshtml" />
+    <Content Include="Views\Adoptions\Delete.cshtml" />
+    <Content Include="Views\Adoptions\Details.cshtml" />
+    <Content Include="Views\Adoptions\Edit.cshtml" />
+    <Content Include="Views\Adoptions\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -291,6 +295,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201512090140586_InitialCreate1.resx">
       <DependentUpon>201512090140586_InitialCreate1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512091701234_ChangeAdoptionModel.resx">
+      <DependentUpon>201512091701234_ChangeAdoptionModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

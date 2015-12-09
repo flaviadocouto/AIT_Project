@@ -17,8 +17,12 @@ namespace PetAdoption.Models
 
 
         public int AdoptionID { get; set; }
+        [Display(Name = "Adopted Animals")]
+        public int AnimalID { get; set; }
         [Display(Name = "Adoption Date")]
         public DateTime Date{ get; set; }
+        [Display(Name = "Adopted From")]
+        public int ShelterID { get; set; }
 
 
         public virtual ICollection<Animal> Animal

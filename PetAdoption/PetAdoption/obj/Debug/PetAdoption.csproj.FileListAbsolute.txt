@@ -70,3 +70,4 @@ C:\Users\flavi\Documents\GitHub\AIT_Project\PetAdoption\PetAdoption\obj\Debug\Pe
 C:\Users\flavi\Documents\GitHub\AIT_Project\PetAdoption\PetAdoption\obj\Debug\PetAdoption.Migrations.InitialCreate.resources
 C:\Users\flavi\Documents\GitHub\AIT_Project\PetAdoption\PetAdoption\obj\Debug\PetAdoption.csproj.GenerateResource.Cache
 C:\Users\flavi\Documents\GitHub\AIT_Project\PetAdoption\PetAdoption\obj\Debug\PetAdoption.Migrations.InitialCreate1.resources
+C:\Users\flavi\Documents\GitHub\AIT_Project\PetAdoption\PetAdoption\obj\Debug\PetAdoption.Migrations.ChangeAdoptionModel.resources
