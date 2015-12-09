@@ -205,10 +205,8 @@ new Breed { BreedID = 129, BreedName = "Yorkshire Terrier" }
             //********************ADOPTIONS*********************
             var Adoptions = new List<Adoption>
             {
-                new Adoption { AdoptionID = 1, Date = DateTime.Parse("2015-09-01") },
-                new Adoption { AdoptionID = 2, Date = DateTime.Parse("2015-09-01") },
-                new Adoption { AdoptionID = 3, Date = DateTime.Parse("2015-09-01") },
-                new Adoption { AdoptionID = 4, Date = DateTime.Parse("2015-09-01") },
+                new Adoption { AdoptionID = 1, AnimalID = 2, Date = DateTime.Parse("2015-09-01"), ShelterID = 0 },
+                new Adoption { AdoptionID = 2, AnimalID = 3, Date = DateTime.Parse("2015-09-01"), ShelterID = 2 },
             };
             Adoptions.ForEach(s => context.Adoptions.AddOrUpdate(p => p.AdoptionID, s));
             context.SaveChanges();
