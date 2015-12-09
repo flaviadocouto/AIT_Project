@@ -17,7 +17,9 @@ namespace PetAdoption.Models
 
 
         public int AnimalID { get; set; }
+        [Display(Name = "Pet Name")]
         public string Name { get; set; }
+        [Display(Name = "Date of Birth")]
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
         public DateTime DOB { get; set; }
         public string Gender { get; set; }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -16,6 +17,7 @@ namespace PetAdoption.Models
 
 
         public int AdoptionID { get; set; }
+        [Display(Name = "Adoption Date")]
         public DateTime Date{ get; set; }
 
 
