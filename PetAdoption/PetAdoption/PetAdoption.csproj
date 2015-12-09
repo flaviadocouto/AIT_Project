@@ -189,6 +189,10 @@
     <Compile Include="Migrations\201512091701234_ChangeAdoptionModel.Designer.cs">
       <DependentUpon>201512091701234_ChangeAdoptionModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201512091853322_ChangeAgain.cs" />
+    <Compile Include="Migrations\201512091853322_ChangeAgain.Designer.cs">
+      <DependentUpon>201512091853322_ChangeAgain.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Adoption.cs" />
@@ -298,6 +302,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201512091701234_ChangeAdoptionModel.resx">
       <DependentUpon>201512091701234_ChangeAdoptionModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512091853322_ChangeAgain.resx">
+      <DependentUpon>201512091853322_ChangeAgain.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
