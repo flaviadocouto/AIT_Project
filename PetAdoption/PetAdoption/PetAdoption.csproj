@@ -193,11 +193,16 @@
     <Compile Include="Migrations\201512091853322_ChangeAgain.Designer.cs">
       <DependentUpon>201512091853322_ChangeAgain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201512092326499_AnimalModel.cs" />
+    <Compile Include="Migrations\201512092326499_AnimalModel.Designer.cs">
+      <DependentUpon>201512092326499_AnimalModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Adoption.cs" />
     <Compile Include="Models\Animal.cs" />
     <Compile Include="Models\Breed.cs" />
+    <Compile Include="Models\Gender.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\PetAdoptionModelContext.cs" />
@@ -271,16 +276,16 @@
     <Content Include="Views\Breeds\Details.cshtml" />
     <Content Include="Views\Breeds\Edit.cshtml" />
     <Content Include="Views\Breeds\Index.cshtml" />
-    <Content Include="Views\Animals\Create.cshtml" />
-    <Content Include="Views\Animals\Delete.cshtml" />
-    <Content Include="Views\Animals\Details.cshtml" />
-    <Content Include="Views\Animals\Edit.cshtml" />
-    <Content Include="Views\Animals\Index.cshtml" />
     <Content Include="Views\Adoptions\Create.cshtml" />
     <Content Include="Views\Adoptions\Delete.cshtml" />
     <Content Include="Views\Adoptions\Details.cshtml" />
     <Content Include="Views\Adoptions\Edit.cshtml" />
     <Content Include="Views\Adoptions\Index.cshtml" />
+    <Content Include="Views\Animals\Create.cshtml" />
+    <Content Include="Views\Animals\Delete.cshtml" />
+    <Content Include="Views\Animals\Details.cshtml" />
+    <Content Include="Views\Animals\Edit.cshtml" />
+    <Content Include="Views\Animals\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -305,6 +310,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201512091853322_ChangeAgain.resx">
       <DependentUpon>201512091853322_ChangeAgain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512092326499_AnimalModel.resx">
+      <DependentUpon>201512092326499_AnimalModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

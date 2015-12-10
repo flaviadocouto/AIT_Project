@@ -46,7 +46,7 @@ namespace PetAdoption.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "AnimalID,Name,DOB,Gender")] Animal animal)
+        public ActionResult Create([Bind(Include = "AnimalID,Name,BreedID,DOB,MF,ForAdoption")] Animal animal)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace PetAdoption.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "AnimalID,Name,DOB,Gender")] Animal animal)
+        public ActionResult Edit([Bind(Include = "AnimalID,Name,BreedID,DOB,MF,ForAdoption")] Animal animal)
         {
             if (ModelState.IsValid)
             {

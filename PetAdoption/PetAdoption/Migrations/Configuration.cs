@@ -7,7 +7,7 @@ namespace PetAdoption.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<PetAdoption.Models.PetAdoptionModelContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<PetAdoptionModelContext>
     {
         public Configuration()
         {
@@ -31,22 +31,69 @@ namespace PetAdoption.Migrations
             //
             var Animals = new List<Animal>
             {
-                new Animal { AnimalID = 1, Name = "Carson",   Gender = "Male",
-                    DOB = DateTime.Parse("2010-09-01") },
-                new Animal { AnimalID = 2, Name = "Meredith", Gender = "Female",
-                    DOB = DateTime.Parse("2012-09-01") },
-                new Animal { AnimalID = 3, Name = "Arturo",   Gender = "Male",
-                    DOB = DateTime.Parse("2013-09-01") },
-                new Animal { AnimalID = 4, Name = "Gytis",    Gender = "Female",
-                    DOB = DateTime.Parse("2012-09-01") },
-                new Animal { AnimalID = 5, Name = "Yan",      Gender = "Male",
-                    DOB = DateTime.Parse("2012-09-01") },
-                new Animal { AnimalID = 6, Name = "Peggy",    Gender = "Female",
-                    DOB = DateTime.Parse("2011-09-01") },
-                new Animal { AnimalID = 7, Name  = "Laura",    Gender = "Female",
-                    DOB = DateTime.Parse("2013-09-01") },
-                new Animal { AnimalID = 8, Name = "Nino",     Gender = "Male",
-                    DOB = DateTime.Parse("2005-08-11") }
+                new Animal
+                {
+                    AnimalID = 1,
+                    Name = "Carson",
+                    BreedID = 3,
+                    MF = Gender.Male,
+                    DOB = DateTime.Parse("2010-09-01"),
+                    ForAdoption = false
+                },
+                new Animal
+                {
+                    AnimalID = 2,
+                    Name = "Meredith",
+                    BreedID = 40,
+                    MF = Gender.Female,
+                    DOB = DateTime.Parse("2012-09-01"),
+                    ForAdoption = false
+                },
+                new Animal
+                { AnimalID = 3,
+                    Name = "Arturo",
+                    BreedID = 33,
+                    MF = Gender.Male,
+                    DOB = DateTime.Parse("2013-09-01"),
+                    ForAdoption = true
+                },
+                new Animal
+                { AnimalID = 4,
+                    Name = "Gytis",
+                    MF = Gender.Female,
+                    DOB = DateTime.Parse("2012-09-01"),
+                    ForAdoption = true
+                },
+                new Animal
+                { AnimalID = 5,
+                    Name = "Yan",
+                    BreedID = 79,
+                    MF = Gender.Male,
+                    DOB = DateTime.Parse("2012-09-01"),
+                    ForAdoption = true
+                },
+                new Animal
+                { AnimalID = 6,
+                    Name = "Peggy",
+                    BreedID = 111,
+                    MF = Gender.Female,
+                    DOB = DateTime.Parse("2011-09-01"),
+                    ForAdoption = true
+                },
+                new Animal
+                { AnimalID = 7,
+                    Name  = "Laura",
+                    MF = Gender.Female,
+                    DOB = DateTime.Parse("2013-09-01"),
+                    ForAdoption = true
+                },
+                new Animal { AnimalID = 8,
+                    Name = "Nino",
+                    BreedID = 78,
+                    MF = Gender.Male,
+                    DOB = DateTime.Parse("2005-08-11"),
+                    ForAdoption = true
+                }
             };
             Animals.ForEach(s => context.Animals.AddOrUpdate(p => p.AnimalID, s));
             context.SaveChanges();
