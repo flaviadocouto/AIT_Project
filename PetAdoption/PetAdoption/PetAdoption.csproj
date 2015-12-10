@@ -197,6 +197,10 @@
     <Compile Include="Migrations\201512092326499_AnimalModel.Designer.cs">
       <DependentUpon>201512092326499_AnimalModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201512101825290_BreedUpdate.cs" />
+    <Compile Include="Migrations\201512101825290_BreedUpdate.Designer.cs">
+      <DependentUpon>201512101825290_BreedUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Adoption.cs" />
@@ -313,6 +317,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201512092326499_AnimalModel.resx">
       <DependentUpon>201512092326499_AnimalModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512101825290_BreedUpdate.resx">
+      <DependentUpon>201512101825290_BreedUpdate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

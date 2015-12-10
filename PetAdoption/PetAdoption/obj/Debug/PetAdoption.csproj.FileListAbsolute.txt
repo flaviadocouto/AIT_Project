@@ -73,3 +73,4 @@ C:\Users\flavi\Documents\GitHub\AIT_Project\PetAdoption\PetAdoption\obj\Debug\Pe
 C:\Users\flavi\Documents\GitHub\AIT_Project\PetAdoption\PetAdoption\obj\Debug\PetAdoption.Migrations.ChangeAdoptionModel.resources
 C:\Users\flavi\Documents\GitHub\AIT_Project\PetAdoption\PetAdoption\obj\Debug\PetAdoption.Migrations.ChangeAgain.resources
 C:\Users\flavi\Documents\GitHub\AIT_Project\PetAdoption\PetAdoption\obj\Debug\PetAdoption.Migrations.AnimalModel.resources
+C:\Users\flavi\Documents\GitHub\AIT_Project\PetAdoption\PetAdoption\obj\Debug\PetAdoption.Migrations.BreedUpdate.resources
