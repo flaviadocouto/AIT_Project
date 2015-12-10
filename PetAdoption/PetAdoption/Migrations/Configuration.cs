@@ -35,26 +35,26 @@ namespace PetAdoption.Migrations
                 {
                     AnimalID = 1,
                     Name = "Carson",
-                    BreedID = 3,
                     MF = Gender.Male,
                     DOB = DateTime.Parse("2010-09-01"),
+                    Info = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
                     ForAdoption = false
                 },
                 new Animal
                 {
                     AnimalID = 2,
                     Name = "Meredith",
-                    BreedID = 40,
                     MF = Gender.Female,
                     DOB = DateTime.Parse("2012-09-01"),
+                    Info = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
                     ForAdoption = false
                 },
                 new Animal
                 { AnimalID = 3,
                     Name = "Arturo",
-                    BreedID = 33,
                     MF = Gender.Male,
                     DOB = DateTime.Parse("2013-09-01"),
+                    Info = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
                     ForAdoption = true
                 },
                 new Animal
@@ -62,36 +62,38 @@ namespace PetAdoption.Migrations
                     Name = "Gytis",
                     MF = Gender.Female,
                     DOB = DateTime.Parse("2012-09-01"),
+                    Info = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
                     ForAdoption = true
                 },
                 new Animal
                 { AnimalID = 5,
                     Name = "Yan",
-                    BreedID = 79,
                     MF = Gender.Male,
                     DOB = DateTime.Parse("2012-09-01"),
+                    Info = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
                     ForAdoption = true
                 },
                 new Animal
                 { AnimalID = 6,
                     Name = "Peggy",
-                    BreedID = 111,
                     MF = Gender.Female,
                     DOB = DateTime.Parse("2011-09-01"),
+                    Info = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
                     ForAdoption = true
                 },
                 new Animal
                 { AnimalID = 7,
-                    Name  = "Laura",
+                    Name  = "Tuana",
                     MF = Gender.Female,
                     DOB = DateTime.Parse("2013-09-01"),
+                    Info = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
                     ForAdoption = true
                 },
                 new Animal { AnimalID = 8,
                     Name = "Nino",
-                    BreedID = 78,
                     MF = Gender.Male,
                     DOB = DateTime.Parse("2005-08-11"),
+                    Info = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
                     ForAdoption = true
                 }
             };
@@ -236,11 +238,11 @@ namespace PetAdoption.Migrations
             //********************SHELTER*********************
             var Shelters = new List<Shelter>
             {
-                new Shelter { ShelterID = 1, Name = "Happy Home" },
-                new Shelter { ShelterID = 2, Name = "DSPCA" },
-                new Shelter { ShelterID = 3, Name = "Irish dogs" },
-                new Shelter { ShelterID = 4, Name = "Home Forever" },
-                new Shelter { ShelterID = 6, Name = "Madra" },
+                new Shelter { ShelterID = 1, Name = "Happy Home", email = "happyfeet@email.com", phone = 012223344 },
+                new Shelter { ShelterID = 2, Name = "DSPCA", email = "dspca@email.com", phone = 012223344 },
+                new Shelter { ShelterID = 3, Name = "Irish dogs", email = "irishdogs@email.com", phone = 012223344 },
+                new Shelter { ShelterID = 4, Name = "Home Forever", email = "homeforever@email.com", phone = 012223344 },
+                new Shelter { ShelterID = 6, Name = "Madra", email = "madra@email.com", phone = 012223344 },
 
             };
             Shelters.ForEach(s => context.Shelters.AddOrUpdate(p => p.ShelterID, s));

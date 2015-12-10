@@ -17,14 +17,10 @@ namespace PetAdoption.Models
             _breeds = new List<Breed>();
         }
 
-
         public int AnimalID { get; set; }
 
         [Display(Name = "Pet Name")]
         public string Name { get; set; }
-
-        [Display(Name = "Breed")]
-        public int BreedID { get; set; }
 
         [Display(Name = "Date of Birth")]
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
@@ -32,6 +28,9 @@ namespace PetAdoption.Models
 
         [Display(Name = "Gender")]
         public Gender MF { get; set; }
+
+        [Display(Name = "Information")]
+        public string Info { get; set; }
 
         [Display(Name = "For Adoption")]
         public bool ForAdoption { get; set; }

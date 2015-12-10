@@ -17,9 +17,15 @@ namespace PetAdoption.Models
 
 
         public int ShelterID { get; set; }
+
         [Display(Name = "Shelter")]
         public string Name { get; set; }
 
+        [Display(Name = "Email")]
+        public string email { get; set; }
+
+        [Display(Name = "Phone Number")]
+        public int phone { get; set; }
 
         public virtual ICollection<Animal> Animal
         {
