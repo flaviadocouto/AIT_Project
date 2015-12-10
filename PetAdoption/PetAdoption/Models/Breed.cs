@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -19,7 +20,8 @@ namespace PetAdoption.Models
         public int BreedID { get; set; }
         [Display(Name = "Breed")]
         public string BreedName { get; set; }
-        
+        [Display(Name = "Description")]
+        public string BreedType { get; set; }
 
         public virtual ICollection<Animal> Animal
         {
