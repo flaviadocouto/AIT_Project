@@ -95,6 +95,4 @@ namespace PetAdoption
             return dogs.ToArray();
         }
     }
-
-    
 }
