@@ -26,7 +26,7 @@ namespace PetAdoption
 
         private PetAdoptionModelContext entities = new PetAdoptionModelContext();
 
-        [WebMethod]
+        [WebMethod(Description = "Find dogs by name")]
         public string[] GetDogsByName(string name)
         {
             List<string> animals = new List<string>();
@@ -40,7 +40,7 @@ namespace PetAdoption
             return animals.ToArray();
         }
 
-        [WebMethod]
+        [WebMethod(Description = "Find shelters by name")]
         public string[] GetShelterByName(string name)
         {
             List<string> shelters = new List<string>();
@@ -54,7 +54,7 @@ namespace PetAdoption
             return shelters.ToArray();
         }
 
-        [WebMethod]
+        [WebMethod(Description = "Find breeds")]
         public string[] GetBreedByName(string name)
         {
             List<string> breeds = new List<string>();
@@ -68,7 +68,7 @@ namespace PetAdoption
             return breeds.ToArray();
         }
 
-        [WebMethod]
+        [WebMethod(Description = "Find dogs for adoption")]
         public string[] GetDogsForAdoption()
         {
             List<string> dogs = new List<string>();
@@ -82,7 +82,7 @@ namespace PetAdoption
             return dogs.ToArray();
         }
 
-        [WebMethod]
+        [WebMethod(Description = "Find adopted dogs")]
         public string[] GetAdoptedDogs()
         {
             List<string> dogs = new List<string>();
