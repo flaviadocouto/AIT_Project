@@ -67,6 +67,33 @@ namespace PetAdoption
             }
             return breeds.ToArray();
         }
+
+        [WebMethod]
+        public string[] GetDogsForAdoption()
+        {
+            List<string> dogs = new List<string>();
+
+            foreach (var dog in entities.Animals
+                                         .Where(b => b.ForAdoption)
+                                         .ToList())
+            {
+                dogs.Add(dog.Name);
+            }
+            return dogs.ToArray();
+        }
+
+        [WebMethod]
+        public string[] GetAdoptedDogs()
+        {
+            List<string> dogs = new List<string>();
+
+            foreach (var dog in entities.Animals
+                                         .Where(b => b.ForAdoption.Equals(false)))
+            {
+                dogs.Add(dog.Name);
+            }
+            return dogs.ToArray();
+        }
     }
 
     
