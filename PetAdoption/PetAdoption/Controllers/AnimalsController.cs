@@ -15,11 +15,39 @@ namespace PetAdoption.Controllers
         private PetAdoptionModelContext db = new PetAdoptionModelContext();
 
         // GET: Animals
-        public ActionResult Index()
+        public ActionResult Index(string sortOrder, string searchString)
         {
-            return View(db.Animals
-                .Where(b => b.ForAdoption)
-                .ToList());
+            ViewBag.NameSortParm = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            ViewBag.DateSortParm = sortOrder == "Date" ? "date_desc" : "Date";
+            var dogs = from d in db.Animals
+                       .Where(b => b.ForAdoption)
+                       select d;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                dogs = dogs
+                    .Where(d => d.Name.ToUpper()
+                    .Contains(searchString.ToUpper()));
+            }
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    dogs = dogs.OrderByDescending(s => s.Name);
+                    break;
+                case "Date":
+                    dogs = dogs.OrderBy(s => s.DOB);
+                    break;
+                case "date_desc":
+                    dogs = dogs.OrderByDescending(s => s.DOB);
+                    break;
+                default:
+                    dogs = dogs.OrderBy(s => s.Name);
+                    break;
+            }
+            return View(dogs.ToList());
+        
+            //return View(db.Animals
+            //    .Where(b => b.ForAdoption)
+            //    .ToList());
         }
 
         // GET: Animals/Details/5

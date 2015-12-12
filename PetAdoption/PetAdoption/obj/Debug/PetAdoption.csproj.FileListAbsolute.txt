@@ -75,3 +75,5 @@ C:\Users\flavi\Documents\GitHub\AIT_Project\PetAdoption\PetAdoption\obj\Debug\Pe
 C:\Users\flavi\Documents\GitHub\AIT_Project\PetAdoption\PetAdoption\obj\Debug\PetAdoption.dll
 C:\Users\flavi\Documents\GitHub\AIT_Project\PetAdoption\PetAdoption\obj\Debug\PetAdoption.pdb
 C:\Users\flavi\Documents\GitHub\AIT_Project\PetAdoption\PetAdoption\obj\Debug\PetAdoption.csprojResolveAssemblyReference.cache
+C:\Users\flavi\Documents\GitHub\AIT_Project\PetAdoption\PetAdoption\bin\PagedList.dll
+C:\Users\flavi\Documents\GitHub\AIT_Project\PetAdoption\PetAdoption\bin\PagedList.xml

@@ -4,29 +4,23 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Dogs for Adoption</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
+@using (Html.BeginForm())
+{
+    <p> Find dogs by name: @Html.TextBox("SearchString")
+        <input type="submit" value="Search" />
+    </p>
+}
 <table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.DOB)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.MF)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Info)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ForAdoption)
-        </th>
-        <th></th>
+    <tr> 
+        <th> @Html.ActionLink("Name", "Index", new { sortOrder = ViewBag.NameSortParm }) </th> 
+        <th> @Html.ActionLink("Date of Birth", "Index", new { sortOrder = ViewBag.DateSortParm }) </th>
+        <th> @Html.ActionLink("Gender", "Index" ) </th>
+        <th> @Html.ActionLink("Information", "Index") </th>
     </tr>
 
 @foreach (var item in Model) {
