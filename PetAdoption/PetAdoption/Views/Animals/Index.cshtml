@@ -19,8 +19,9 @@
     <tr> 
         <th> @Html.ActionLink("Name", "Index", new { sortOrder = ViewBag.NameSortParm }) </th> 
         <th> @Html.ActionLink("Date of Birth", "Index", new { sortOrder = ViewBag.DateSortParm }) </th>
-        <th> @Html.ActionLink("Gender", "Index" ) </th>
+        <th> @Html.ActionLink("Gender", "Index", new { sortOrder = ViewBag.NameSortParm }) </th> 
         <th> @Html.ActionLink("Information", "Index") </th>
+        <th> @Html.ActionLink("For Adoption", "Index") </th>
     </tr>
 
 @foreach (var item in Model) {

@@ -18,7 +18,9 @@ namespace PetAdoption.Controllers
         public ActionResult Index(string sortOrder, string searchString)
         {
             ViewBag.NameSortParm = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
-            ViewBag.DateSortParm = sortOrder == "Date" ? "date_desc" : "Date";
+            ViewBag.NameSortParm = String.IsNullOrEmpty(sortOrder) ? "gender_desc" : "";
+            ViewBag.DateSortParm = sortOrder == "date" ? "date_desc" : "date";
+
             var dogs = from d in db.Animals
                        .Where(b => b.ForAdoption)
                        select d;
@@ -33,11 +35,17 @@ namespace PetAdoption.Controllers
                 case "name_desc":
                     dogs = dogs.OrderByDescending(s => s.Name);
                     break;
-                case "Date":
+                case "date":
                     dogs = dogs.OrderBy(s => s.DOB);
                     break;
                 case "date_desc":
                     dogs = dogs.OrderByDescending(s => s.DOB);
+                    break;
+                case "gender":
+                    dogs = dogs.OrderBy(s => s.MF);
+                    break;
+                case "gender_desc":
+                    dogs = dogs.OrderByDescending(s => s.MF);
                     break;
                 default:
                     dogs = dogs.OrderBy(s => s.Name);
